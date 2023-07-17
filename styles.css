@@ -1,31 +1,63 @@
-.rotate-by-deg {
-    transform: rotate(45deg);
-  }
-  
-  .rotate-by-rad {
-    transform: rotate(-1rad);
-  }
-  
-  .rotate-by-turn {
-    transform: rotate(0.3turn);
-  }
-  
-  body {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  p {
-    margin-bottom: 16px;
-  }
-  
-  img {
-    width: 60px;
-  }
-  
-  div,
-  * + p {
-    margin-top: 1.5rem;
-  }
-  
+.scaleX {
+  transform: scaleX(0.25);
+}
+
+.scaleY {
+  transform: scaleY(1.5);
+}
+
+.scaleXY {
+  transform: scale(0.25, 1.5);
+}
+
+.scale {
+  transform: scale(0.5);
+}
+
+body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin: 24px 0px 16px;
+}
+
+img {
+  width: 60px;
+}
+
+
+.skewX {
+  transform: skewX(45deg);
+}
+
+.skewY {
+  transform: skewY(-0.5rad);
+}
+
+.skewXY {
+  transform: skew(45deg, -0.5rad);
+}
+
+.skew {
+  /* single value behaves the same as skewX */
+  transform: skew(45deg);
+}
+/*  skew */
+
+p {
+  margin: 0;
+}
+
+div {
+  background: #cc9543;
+  width: 50px;
+  height: 50px;
+}
+
+div,
+* + p {
+  margin-top: 1.5rem;
+}

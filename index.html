@@ -4,32 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="favicon.jpg" type="image/jpg">
+    <link rel="icon" href="favicon.jpg" type="image/jpg" />
     <title>Transform</title>
   </head>
   <body>
     <p>Original</p>
-    <img src="./jkwFqfX.png" alt="top logo" />
+    <img src="jkwFqfX.png" alt="top logo" />
 
-    <p>Rotate by 45 degrees</p>
-    <img
-      class="rotate-by-deg"
-      src="./jkwFqfX.png"
-      alt="top logo"
-    />
+    <p>0.25 scale on X dimension</p>
+    <img class="scaleX" src="jkwFqfX.png" alt="top logo" />
 
-    <p>Rotate by -1 radian</p>
-    <img
-      class="rotate-by-rad"
-      src="./jkwFqfX.png"
-      alt="top logo"
-    />
+    <p>1.5 scale on Y dimension</p>
+    <img class="scaleY" src="jkwFqfX.png" alt="top logo" />
 
-    <p>Rotate 0.3 turn</p>
-    <img
-      class="rotate-by-turn"
-      src="./jkwFqfX.png"
-      alt="top logo"
-    />
+    <p>Scale by 0.25 and 1.5 on X and Y dimension respectively</p>
+    <img class="scaleXY" src="jkwFqfX.png" alt="top logo" />
+
+    <p>0.5 scale on both dimensions</p>
+    <img class="scale" src="jkwFqfX.png" alt="top logo" />
+
+    <p>Original</p>
+    <div></div>
+
+    <p>Skew 45 degrees on X-axis</p>
+    <div class="skewX"></div>
+
+    <p>Skew -0.5 radian on Y-axis</p>
+    <div class="skewY"></div>
+
+    <p>Skew 45 degrees and -0.5 radian on X and Y axes respectively</p>
+    <div class="skewXY"></div>
+
+    <p>Skew 45 degrees on X-axis (single value in function)</p>
+    <div class="skew"></div>
   </body>
 </html>
