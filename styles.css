@@ -11,7 +11,7 @@
   height: 100px;
   background-color: red;
   border: 1px solid black;
-  border-radius: 50%;
+  border-radius: 0%;
   animation-duration: 5s;
   animation-name: change-color;
   animation-iteration-count: infinite;
@@ -31,15 +31,19 @@
 @keyframes change-color {
   from {
     background-color: red;
+    
   }
   
   50% {
     width: 200px;
     height: 200px;
+    border-radius: 50%;
     background-color: blue;
   }
 
   to {
     background-color: green;
+    /* border-radius: 0%; */
+
   }
 }
