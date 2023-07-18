@@ -1,20 +1,32 @@
-.red-box
-,
-.blue-box 
-{
-  position: absolute;
-  top:100px;  
-  left: 100px;
-  width: 100px;
-  height: 100px;
+.rotateX {
+  transform: rotateX(80deg);
 }
 
-.red-box {
-    background: red;
-  transform: rotate(10deg) translate(200%);
+.rotateY {
+  transform: rotateY(60deg);
+  
 }
 
-.blue-box {
-  background: blue;
-  transform: translate(200%) rotate(45deg);
+.rotateZ {
+  transform: rotateZ(60deg);
 }
+
+body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+img {
+  width: 60px;
+}
+
+div,
+* + p {
+  margin-top: 1.5rem;
+}
+
