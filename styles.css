@@ -1,63 +1,20 @@
-.scaleX {
-  transform: scaleX(0.25);
+.red-box
+,
+.blue-box 
+{
+  position: absolute;
+  top:100px;  
+  left: 100px;
+  width: 100px;
+  height: 100px;
 }
 
-.scaleY {
-  transform: scaleY(1.5);
+.red-box {
+    background: red;
+  transform: rotate(10deg) translate(200%);
 }
 
-.scaleXY {
-  transform: scale(0.25, 1.5);
-}
-
-.scale {
-  transform: scale(0.5);
-}
-
-body {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-
-p {
-  margin: 24px 0px 16px;
-}
-
-img {
-  width: 60px;
-}
-
-
-.skewX {
-  transform: skewX(45deg);
-}
-
-.skewY {
-  transform: skewY(-0.5rad);
-}
-
-.skewXY {
-  transform: skew(45deg, -0.5rad);
-}
-
-.skew {
-  /* single value behaves the same as skewX */
-  transform: skew(45deg);
-}
-/*  skew */
-
-p {
-  margin: 0;
-}
-
-div {
-  background: #cc9543;
-  width: 50px;
-  height: 50px;
-}
-
-div,
-* + p {
-  margin-top: 1.5rem;
+.blue-box {
+  background: blue;
+  transform: translate(200%) rotate(45deg);
 }
