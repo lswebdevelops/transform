@@ -1,28 +1,14 @@
-body{
-  --text-color: #222;
-  --bkg-color: #fff;
+/* These are so ugh-ly! Let's get rid of them. */
+*:focus {
+  /* outline: none; */
+  border: solid firebrick 1px;
+  scale: 0.8;
 }
-body.dark-theme{
-  --text-color: #eee;
-  --bkg-color: #121212;
-}
-@media(prefers-color-scheme: dark) {
-  /* defaults to dark theme */body{
-    --text-color: #eee;
-    --bkg-color: #121212;
-  }
-  body.light-theme{
-    --text-color: #222;
-    --bkg-color: #fff;
-  }
-}
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
-body{
-  background: var(--bkg-color);
-}
-h1,
-p{
-  color: var(--text-color);
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: url(https://images.unsplash.com/photo-1578241561880-0a1d5db3cb8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80);
+  background-size: cover;
+  background-position: center;
 }

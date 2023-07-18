@@ -1,22 +1,13 @@
-const btn=document.querySelector(".btn-toggle");
-const prefersDarkScheme=window.matchMedia("(prefers-color-scheme: dark)");
-const currentTheme=localStorage.getItem("theme");
-if(currentTheme=="dark") {
-  document.body.classList.toggle("dark-theme");
+// We also need to manually add in event handling for both mouse and keyboard events.
+const buttons = document.querySelectorAll('.button');
 
-}
- else if(currentTheme=="light") {
-  document.body.classList.toggle("light-theme");
-}
-btn.addEventListener("click", function() {
-  if(prefersDarkScheme.matches) {
-    document.body.classList.toggle("light-theme");
-    var theme=document.body.classList.contains("light-theme")
-      ?"light": "dark";
-  } else{
-    document.body.classList.toggle("dark-theme");
-    vartheme=document.body.classList.contains("dark-theme")
-      ?"dark": "light";
+function nameAlerter(e) {
+  if (e.type === 'click' || e.key === ' ' || e.key === 'Enter') {
+    alert(e.target.textContent);
   }
-  localStorage.setItem("theme", theme);
-});
+}
+
+buttons.forEach(button => {
+  button.addEventListener('click', nameAlerter)
+  button.addEventListener('keydown', nameAlerter)
+})
