@@ -1,14 +1,33 @@
-/* These are so ugh-ly! Let's get rid of them. */
-*:focus {
-  /* outline: none; */
-  border: solid firebrick 1px;
-  scale: 0.8;
+body {
+  background: purple;
 }
 
-body {
-  height: 100vh;
-  margin: 0;
-  background-image: url(https://images.unsplash.com/photo-1578241561880-0a1d5db3cb8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80);
-  background-size: cover;
-  background-position: center;
+@media (max-width: 900px) {
+  body {
+    background: green;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    background: brown;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background: pink;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background: blue;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background: orange;
+  }
 }
