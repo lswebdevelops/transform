@@ -1,32 +1,26 @@
-.rotateX {
-  transform: rotateX(80deg);
+.one {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  transition: transform 
+/* takes x second to turn around */
+  2s 
+/* starts in x seconds */
+  0.020s; 
 }
 
-.rotateY {
-  transform: rotateY(60deg);
-  
+.one:hover {
+  transform: rotate(180deg);
 }
 
-.rotateZ {
-  transform: rotateZ(60deg);
+
+.two {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  transition:   0.2s  0.03s;
 }
 
-body {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
+.two:hover{
+  transform: rotate(23deg);
 }
-
-p {
-  margin-bottom: 16px;
-}
-
-img {
-  width: 60px;
-}
-
-div,
-* + p {
-  margin-top: 1.5rem;
-}
-
